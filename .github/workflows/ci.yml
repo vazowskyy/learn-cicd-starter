@@ -40,4 +40,4 @@ jobs:
           run: go install honnef.co/go/tools/cmd/staticcheck@latest
         
         - name: Run lint check  
-          run: test -z $(staticcheck ./...)
+          run: staticcheck ./...
